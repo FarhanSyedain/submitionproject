@@ -1,0 +1,32 @@
+django>=5.0
+djangorestframework>=3.15
+djangorestframework-simplejwt>=5.3
+django-cors-headers>=4.3
+django-environ>=0.11
+requests>=2.31
+django-q2>=1.6
+google-genai>=0.3
+reportlab>=4.1
+
+# Local Hugging Face translator (Omarrran/koshur-kouter-ks-en_v1).
+# Heavy install (~1.5GB on disk). Comment these out if you only use cloud translation.
+torch>=2.5
+transformers>=4.45
+accelerate>=1.0
+
+# Local in-process TTS (TTS_PROVIDER=local_matcha). Only soundfile is
+# pip-installable; the Bolbosh fork of matcha-tts must be installed
+# separately or pointed at via TTS_LOCAL_BOLBOSH_PATH:
+#   pip install -e /path/to/Bolbosh
+#   pip install git+https://github.com/abdulmuizz0903/KashmiriNormalizer
+soundfile>=0.12
+
+# Tests
+pytest>=8.0
+pytest-django>=4.8
+
+# Optional / future modules — install when you need them
+# pytrends>=4.9          # Google Trends client
+# Pillow>=10.0           # Image handling
+# psycopg2-binary>=2.9   # Postgres driver
+# redis>=5.0             # Django Q Redis broker (we default to ORM broker)

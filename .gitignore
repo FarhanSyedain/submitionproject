@@ -1,0 +1,60 @@
+# ─── Python ───────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ─── Virtualenvs ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ─── Django ───────────────────────────────────────────────────────────
+*.sqlite3
+*.sqlite3-journal
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# ─── Environment & secrets ────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ─── Frontend ─────────────────────────────────────────────────────────
+node_modules/
+dist/
+.vite/
+.cache/
+
+# ─── IDE / OS ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Logs ─────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Local backups & scratch ──────────────────────────────────────────
+backup/
+*.bak
+*.tmp
+
+# ─── Claude Code artifacts (planning notes, skill cache) ──────────────
+.claude/
+CLAUDE.md
+claude.md
+.claude.json
